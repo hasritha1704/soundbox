@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Kushi
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+          p Shiva Nirvana
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Review
+            .panel-body
+              p Vijay Deverakonda and Samantha Ruth Prabhu channel their charm in director Shiva Nirvana’s ‘Kushi’, which amps up the feel-good factor and refrains from exploring its conflict point beyond the surface level.
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Cast
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Vijay Deverakonda
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Samantha Ruth Prabhu
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Picture
+            .panel-body
+              img.img-responsive.img-rounded(src='/images/kushi.jpg')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/blog/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Amuktha
+                    small.reviewTimestamp  16 September 2023
+                  .col-xs-12
+                    p What a great Movie. I can't say enough good things about it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Sukumar
+                    small.reviewTimestamp  16 October 2023
+                  .col-xs-12
+                    p It was nice.
+    .col-xs-12.col-md-3

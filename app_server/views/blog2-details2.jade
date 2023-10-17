@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Jailer
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+          p Nelson Dilipkumar
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Review
+            .panel-body
+              p The film was mediocre at best with the director confused on the tone of the movie. The plot of the movie was all over the place. First half was decent and it felt like a movie for the masses, and breadcrumbed enough for a good showdown. The second half was a major letdown, with the whole movie turning into a soap opera heist film with violence and comedy used in a bad taste.
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Cast
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Rajinikanth
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Ramya Krishna
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Picture
+            .panel-body
+              img.img-responsive.img-rounded(src='/images/jailer.jpg')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/blog/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Amuktha
+                    small.reviewTimestamp  16 September 2023
+                  .col-xs-12
+                    p What a great Movie. I can't say enough good things about it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Sukumar
+                    small.reviewTimestamp  16 October 2023
+                  .col-xs-12
+                    p It was nice.
+    .col-xs-12.col-md-3

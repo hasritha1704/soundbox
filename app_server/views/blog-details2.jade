@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Lover
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          p Taylor Swift
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Review
+            .panel-body
+              p Lover is, fittingly, evolutionary rather than revolutionary. But nevertheless it feels like an epiphany: free and unhurried, governed by no one concept or outlook, it represents Swift at her most liberated, enjoying a bit of the freedom she won for her cohort.
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Cast
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Amolia Fernandez
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Jack Beridian
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Picture
+            .panel-body
+              img.img-responsive.img-rounded(src='/images/lover.png')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/blog/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Amuktha
+                    small.reviewTimestamp  16 September 2023
+                  .col-xs-12
+                    p What a great Song. I can't say enough good things about it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Sukumar
+                    small.reviewTimestamp  16 October 2023
+                  .col-xs-12
+                    p It was nice.
+    .col-xs-12.col-md-3
